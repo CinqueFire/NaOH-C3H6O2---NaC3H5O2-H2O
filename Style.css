@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #d8c98f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .outer-box {
+    background: #e6d9a8;
+    padding: 25px;
+  }
+
+  .inner-box {
+  background: #cfc8b6;
+  padding: 30px;
+  text-align: center;
+  width: 700px;
+  }
+
+  h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.rules {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.pick-text {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.choice {
+  background: #e6d9a8;
+  padding: 15px;
+}
+
+.choice img {
+  width: 120px;
+  height: auto;
+}
+
+.choice:hover {
+transform: scale(1.1);
+cursor: pointer;
+}
