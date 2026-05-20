@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
   <link rel="stylesheet" href="Style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Sciccors</title>
+  <title>Rock Paper Sciccors</title>
+</head>
 
-  </head>
-  <body>
+<body>
 
-    <div class="outer-box">
-      <div class="inner-box">
+  <div class="outer-box">
+    <div class="inner-box">
 
-        <h1>Rock Paper Sciccors</h1>
+      <h1>Rock Paper Sciccors</h1>
 
-        <div class="rules">
-          <strong>RULES:</strong><br>
-          PAPER &gt; ROCK<br>
-          ROCK &gt; SCISSOR<br>
-          SCISSOR &gt; PAPER
+      <div class="rules">
+        <strong>RULES:</strong><br>
+        PAPER &gt; ROCK<br>
+        ROCK &gt; SCISSOR<br>
+        SCISSOR &gt; PAPER
+      </div>
+
+      <div class="pick-text">PICK 1 OUT OF 3</div>
+
+      <div class="choices">
+
+        <div class="choice" id="rock">
+          <img src="Images folder/favpng_6f90ed490dc0a8ac8fac699c9e488d31.png" alt="Rock">
         </div>
 
-        <div class="pick-text">PICK 1 OUT OF 3</div>
+        <div class="choice" id="paper">
+          <img src="Images folder/favpng_7a40f17d0ebceac59ab81f40b7d74b17.png" alt="Paper">
+        </div>
 
-        <div class="choices">
-          <div class="choice">
-            <img src="Images folder/favpng_6f90ed490dc0a8ac8fac699c9e488d31.png" alt="Rock">
-          </div>
-          <div class="choice">
-            <img src="Images folder/favpng_7a40f17d0ebceac59ab81f40b7d74b17.png" alt="Paper">
-          </div>
-          <div class="choice">
-            <img src="Images folder/clipart2270427.png" alt="Scissors">
-          </div>
+        <div class="choice" id="scissors">
+          <img src="Images folder/clipart2270427.png" alt="Scissors">
+        </div>
+
       </div>
     </div>
+  </div>
 
-    <div class="result">
+  <div class="result">
     <div id="result"></div>
+  </div>
+
+
+  <!-- ADD THIS POPUP HERE -->
+  <div id="popup" class="popup hidden">
+
+    <div class="popup-content">
+
+      <h1 id="popup-title">YOU WIN!</h1>
+
+      <p id="popup-message"></p>
+
+      <button id="closePopup">RETURN</button>
+
     </div>
-    <script src="function.js"></script>
-  </body>
+
+  </div>
+
+
+  <!-- CONFETTI -->
+  <canvas id="confetti"></canvas>
+
+
+  <script src="function.js"></script>
+
+</body>
 </html>
