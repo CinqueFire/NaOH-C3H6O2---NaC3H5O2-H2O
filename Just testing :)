@@ -111,3 +111,25 @@ function animateConfetti() {
         requestAnimationFrame(animateConfetti);
     }
 }
+
+
+html dong:
+<img id="fnaf-jumpscare" 
+     src="Images folder/fnaf-2-foxy.gif"
+     alt="Foxy Jumpscare">
+
+css:
+#fnaf-jumpscare {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 2000;
+
+  display: none;
+}
