@@ -39,10 +39,6 @@ for (let i = 0; i < choices.length; i++) {
                 jumpscareGif.style.display = "block";
                 jumpscareGif.src = "fnaf-2-foxy.gif";
 
-            }
-            else {
-                jumpscareGif.style.display = "none";
-            }
         }
         popup.classList.remove("hidden");
         popupTitle.innerText = result;
