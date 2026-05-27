@@ -14,7 +14,7 @@ for (let i = 0; i < choices.length; i++) {
 
         const randomIndex = Math.floor(Math.random() * 3);
 
-        const computerChoice = computerChoices[randomIndex];
+        const computerChoice =  computerChoices[randomIndex];
 
         let result = "";
         if (playerChoice === computerChoice) {
@@ -35,10 +35,14 @@ for (let i = 0; i < choices.length; i++) {
 
             result = "YOU LOSE!";
             const randomChance = Math.floor(Math.random() * 100);
-            if (randomChance <= 40) {
+            if (randomChance === 100) {
                 jumpscareGif.style.display = "block";
                 jumpscareGif.src = "fnaf-2-foxy.gif";
-
+                
+            }
+            else {
+                jumpscareGif.style.display = "none";
+            }
         }
         popup.classList.remove("hidden");
         popupTitle.innerText = result;
