@@ -4,7 +4,7 @@ const popup = document.getElementById("popup");
 const popupTitle = document.getElementById("popup-title");
 const popupMessage = document.getElementById("popup-message");
 const closePopup = document.getElementById("closePopup");
-const jumpscareGif = document.getElementById("jumpscare-gif");
+const jumpscareGif = document.getElementById("fnaf-2-foxy.gif");
 const computerChoices = ["rock", "paper", "scissors"];
 for (let i = 0; i < choices.length; i++) {
 
