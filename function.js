@@ -35,7 +35,7 @@ for (let i = 0; i < choices.length; i++) {
 
             result = "YOU LOSE!";
             const randomChance = Math.floor(Math.random() * 100);
-            if (randomChance =< 40) {
+            if (randomChance <= 40) {
                 jumpscareGif.style.display = "block";
                 jumpscareGif.src = "fnaf-2-foxy.gif";
 
