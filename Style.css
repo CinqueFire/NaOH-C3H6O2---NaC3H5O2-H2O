@@ -41,6 +41,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 30px;
+  perspective: 200px;
 }
 
 .choice {
@@ -51,11 +52,13 @@ h1 {
 .choice img {
   width: 120px;
   height: auto;
+  pointer-events: none;
 }
 
 .choice:hover {
   transform: scale(1.1);
   cursor: pointer;
+  box-shadow: 0 20px 40px rgba(0,0,0,.3);
 }
 
 .result {
@@ -147,4 +150,25 @@ h1 {
 
   z-index: 1000;
 }
- 
+
+
+#jumpscare {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 2000;
+
+  display: none;
+}
+
+.block {
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
